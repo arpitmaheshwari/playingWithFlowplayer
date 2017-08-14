@@ -1,0 +1,76 @@
+.flowplayer {
+    background-image: url(//flowplayer.com/media/img/demos/white_big.jpg);
+}
+
+.flowplayer .endscreen {
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #777;
+    text-align: center;
+
+    /* do not show endscreen by default - a simpler, non-animated alternative would be:
+     * display: none; */
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.flowplayer .endscreen h3 {
+    font-size: 160%;
+    font-weight: bold;
+    color: #ccc;
+    margin-top: 10%;
+}
+.flowplayer .endscreen h4 {
+    font-size: 120%;
+    color: #eee;
+}
+.flowplayer .endscreen .button {
+    background-color: #00a6bc;
+    padding: 20px 30px;
+    margin: 15px 0;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-size: 110%;
+    color: #eee;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    transition: background-color .1s;
+
+}
+.flowplayer .endscreen .button:hover {
+    background-color: #00afc6;
+}
+.flowplayer .endscreen .button:active {
+    background-color: #009db2;
+}
+.flowplayer .endscreen .fp-toggle {
+    display: block;
+    color: #eee;
+    cursor: pointer;
+}
+.flowplayer .endscreen .fp-toggle:hover {
+    text-decoration: underline;
+}
+
+/* overlay player screen when video is finished */
+.flowplayer.is-finished .endscreen {
+    /* make overlaying link clickable */
+    z-index: 1;
+
+    /* show endscreen - a simpler alternative would be:
+     * display: block; */
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
