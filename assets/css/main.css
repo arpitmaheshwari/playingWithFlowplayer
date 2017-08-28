@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+header{
+    margin: 0;
+    margin-bottom: -5px;
+    padding: auto;
+}
+
+header>img{
+    width: 100%;
+}
+
+main>header {
+    background: #606f70;
+    color: #ffffff;
+    padding: 1px 0px 1px 195px;
+    margin-bottom: 30px;
+}
+
+main>header>h1{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.flowplayer{
+    display: inline-block;
+    margin-left: 195px;
+    width: 670px;
+}
+
+.highlight{
+    color: blue;
+}
+
+#transcript{
+    display: inline-block;
+    margin-left: 15px;
+    max-height: 375px;
+
+    padding-right: 5px;
+    overflow: auto;
+    vertical-align: top;
+    width: 300px;
+}
+
+#transcript a{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+aside{
+    margin: 20px 0 0 195px;
+}
