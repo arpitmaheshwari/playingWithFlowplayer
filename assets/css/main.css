@@ -1,4 +1,5 @@
 body{
+    background-color: #f3f3f3;
     margin: 0;
     font-family: Arial;
 }
@@ -9,15 +10,12 @@ header{
     padding: auto;
 }
 
-header>img{
+header>img,footer>img{
     width: 100%;
 }
 
-main>header {
-    background: #606f70;
-    color: #ffffff;
-    padding: 1px 0px 1px 195px;
-    margin-bottom: 30px;
+main{
+    margin: 0 195px;
 }
 
 main>header>h1{
@@ -27,30 +25,16 @@ main>header>h1{
 
 .flowplayer{
     display: inline-block;
-    margin-left: 195px;
     width: 670px;
 }
 
-.highlight{
-    color: blue;
-}
-
-#transcript{
+#tutorialDesc{
     display: inline-block;
     margin-left: 15px;
     max-height: 375px;
-
     padding-right: 5px;
     overflow: auto;
     vertical-align: top;
-    width: 300px;
+    width: 220px;
 }
 
-#transcript a{
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-aside{
-    margin: 20px 0 0 195px;
-}
